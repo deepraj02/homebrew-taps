@@ -5,20 +5,20 @@
 class Snoop < Formula
   desc ""
   homepage "https://github.com/deepraj02/homebrew-taps"
-  version "1.0.0"
+  version "2.0.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/deepraj02/snoop/releases/download/v1.0.0/snoop_Darwin_x86_64.tar.gz"
-      sha256 "5913e1f2e762155fbffc886105c1523fb3fd3675fa8a8890c0dbc2802ea3f252"
+      url "https://github.com/deepraj02/snoop/releases/download/v2.0.0/snoop_Darwin_x86_64.tar.gz"
+      sha256 "a663ccf978519fc26ec62528272c92a9f4fa93d1373188e210a478811f9580ad"
 
       def install
         bin.install "snoop"
       end
     end
     on_arm do
-      url "https://github.com/deepraj02/snoop/releases/download/v1.0.0/snoop_Darwin_arm64.tar.gz"
-      sha256 "5d1ba5683e3dc912d91de36805ce7922abe05e392d079dc0cef1fb1c63d82649"
+      url "https://github.com/deepraj02/snoop/releases/download/v2.0.0/snoop_Darwin_arm64.tar.gz"
+      sha256 "d964b7b112868bb68002e7e04f5e7a87a7c3d9083c6ca7d9e4e810b4ac133807"
 
       def install
         bin.install "snoop"
@@ -29,8 +29,8 @@ class Snoop < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/deepraj02/snoop/releases/download/v1.0.0/snoop_Linux_x86_64.tar.gz"
-        sha256 "70c102e3eeeac1b35472958ef7d64d704a8f2cd08555cf626b6881c3c8973f38"
+        url "https://github.com/deepraj02/snoop/releases/download/v2.0.0/snoop_Linux_x86_64.tar.gz"
+        sha256 "219b3a226d3face3a8bea74fe1a5c3399906fd06575ba748e80b65e6f917022f"
 
         def install
           bin.install "snoop"
@@ -39,8 +39,8 @@ class Snoop < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/deepraj02/snoop/releases/download/v1.0.0/snoop_Linux_arm64.tar.gz"
-        sha256 "b0e678bb2f46a41bc235f69a0b805815c8cb3a439849724aaa62def80deec9ac"
+        url "https://github.com/deepraj02/snoop/releases/download/v2.0.0/snoop_Linux_arm64.tar.gz"
+        sha256 "9508bdefa7c3132adcc1da0fa8bf1872f7dbeea69f4ccdc7133f5e7299f4b5d9"
 
         def install
           bin.install "snoop"
